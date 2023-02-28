@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="assets/images/logo.svg"
+          alt="Homepage logo"
+          class="header__logo"
+        />
+        <button class="btn__menu btn__menu--open">
+          <img src="assets/images/icon-menu.svg" alt="Menu" />
+        </button>
+        <div class="header__menu">
+          <ul class="header__nav">
+            <button class="btn__menu btn__menu--close">
+              <img src="assets/images/icon-menu-close.svg" alt="Close" />
+            </button>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">New</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Popular</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Trending</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="grid-container">
+        <section class="headline">
+          <picture>
+            <source
+              srcset="assets/images/image-web-3-mobile.jpg"
+              media="(max-width: 37.5em)"
+            />
+            <img
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="Future of Web 3"
+              class="headline__img"
+            />
+          </picture>
+          <div class="headline__text">
+            <h1 class="headline__heading">The Bright Future of Web 3.0?</h1>
+            <div class="headline__description">
+              <p class="headline__details">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="btn">Read more</button>
+            </div>
+          </div>
+        </section>
+        <section class="new">
+          <h2 class="new__heading">New</h2>
+          <div class="new__topic">
+            <h3 class="new__topic-heading">
+              <a href="#" class="new__topic-link">Hydrogen VS Electric Cars</a>
+            </h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="new__topic">
+            <h3 class="new__topic-heading">
+              <a href="#" class="new__topic-link"
+                >The Downsides of AI Artistry</a
+              >
+            </h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="new__topic">
+            <h3 class="new__topic-heading">
+              <a href="#" class="new__topic-link">Is VC Funding Drying Up?</a>
+            </h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+        <section class="hot hot-grid">
+          <div class="hot__topic">
+            <img
+              src="assets/images/image-retro-pcs.jpg"
+              alt="Retro PCs"
+              class="hot__img"
+            />
+            <div class="hot__description">
+              <span class="hot__number">01</span>
+              <h4 class="hot__heading">
+                <a href="#" class="hot__link">Reviving Retro PCs</a>
+              </h4>
+              <p class="paragraph">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="hot__topic">
+            <img
+              src="assets/images/image-top-laptops.jpg"
+              alt="Top Laptops"
+              class="hot__img"
+            />
+            <div class="hot__description">
+              <span class="hot__number">02</span>
+              <h4 class="hot__heading">
+                <a href="#" class="hot__link">Top 10 Laptops of 2022</a>
+              </h4>
+              <p class="paragraph">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="hot__topic">
+            <img
+              src="assets/images/image-gaming-growth.jpg"
+              alt="Gaming growth"
+              class="hot__img"
+            />
+            <div class="hot__description">
+              <span class="hot__number">03</span>
+              <h4 class="hot__heading">
+                <a href="#" class="hot__link">The Growth of Gaming</a>
+              </h4>
+              <p class="paragraph">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
