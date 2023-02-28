@@ -136,7 +136,7 @@ a {
 }
 @media only screen and (max-width: 37.5em) {
   .headline__heading {
-    font-size: 4rem;
+    font-size: 4.2rem;
   }
 }
 .headline__details {
@@ -149,7 +149,8 @@ a {
   background-color: #f15e50;
   font-weight: 700;
   padding: 2rem 4rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -220,7 +221,7 @@ a {
 }
 
 .hot__img {
-  height: 15rem;
+  height: 12rem;
   display: block;
   flex-shrink: 2;
 }
